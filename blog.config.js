@@ -9,7 +9,7 @@ const BLOG = {
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
 
-  THEME: process.env.NEXT_PUBLIC_THEME || 'next', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
+  THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   LANG: 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   HOME_BANNER_IMAGE: './bg_image.jpg', // 首页背景大图，默认文件：/public/bg_image.jpg 。会被Notion中的封面图覆盖。
@@ -46,8 +46,8 @@ const BLOG = {
   // 悬浮挂件
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
   WIDGET_PET_LINK:
-    'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
-  WIDGET_PET_SWITCH_THEME: true, // 点击宠物挂件切换博客主题
+    'https://cdn.jsdelivr.net/npm/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
+  WIDGET_PET_SWITCH_THEME: false, // 点击宠物挂件切换博客主题
 
   // 评论互动 可同时开启多个支持 GISCUS CUSDIS UTTERRANCES GITALK
   // giscus @see https://giscus.app/
